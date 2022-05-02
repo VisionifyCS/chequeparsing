@@ -1,44 +1,33 @@
-// import React from "react";
-// import "./Upload.css";
-
-// const Upload = () => {
-//   return (
-//     <>
-//       <div className="container">
-//         <h1>Cheque parsing made easy, Just one click, Try now</h1>
-//       </div>
-//       <div className="input">
-//         <input type="file"></input>
-//       </div>
-//       <div className="list">
-//         <a href="#">
-//           <span class="listHeader">Download API</span>
-//         </a>
-
-//         <a href="#">
-//           <span class="listHeader">API Documentation</span>
-//         </a>
-//         <a href="#">
-//           <span class="listHeader">API Plans & Pricing</span>
-//         </a>
-//         <a href="#">
-//           <span class="listHeader">Components and Cheque</span>
-//         </a>
-//         <a href="#">
-//           <span class="listHeader">Best Practices</span>
-//         </a>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Upload;
-
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "./Upload.css";
 
 const Upload = () => {
+  const [selectedFiles, setSelectedFiles] = useState([]);
+
+  const handleImageChange = (e) => {
+    // console.log(e.target.files)
+    if (e.target.files) {
+      const filesArray = Array.from(e.target.files).map((file) =>
+        URL.createObjectURL(file)
+      );
+
+      // console.log("filesArray: ", filesArray);
+
+      setSelectedFiles((prevImages) => prevImages.concat(filesArray));
+      Array.from(e.target.files).map(
+        (file) => URL.revokeObjectURL(file) // To avoid memory leak
+      );
+    }
+  };
+
+  const renderPhotos = (source) => {
+    console.log("source: ", source);
+    return source.map((photo) => {
+      return <img src={photo} alt="" key={photo} />;
+    });
+  };
+
   return (
     <>
       <div class="split left">
@@ -46,7 +35,12 @@ const Upload = () => {
           <h1>Cheque parsing made easy, Just one click, Try now</h1>
         </div>
         <div className="input">
-          <input type="file"></input>
+          <input
+            type="file"
+            accept="image/*"
+            multiple
+            onChange={handleImageChange}
+          />
         </div>
         <div className="list">
           <a href="#">
@@ -70,7 +64,7 @@ const Upload = () => {
       <div class="split right">
         <div className="cheque">
           <h1>Cheque</h1>
-          <p>Cheque Details</p>
+          <p>{renderPhotos(selectedFiles)}</p>
         </div>
         <div className="output">
           <a href="#">
