@@ -1,0 +1,14 @@
+.header{
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.img{
+    height: 100px;
+}

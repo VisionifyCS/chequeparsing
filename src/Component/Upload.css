@@ -1,0 +1,95 @@
+
+.container {
+    display: flex;
+    margin-left: 230px;
+    font-family: cursive;
+    font-size: 13px;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 320px;
+    width: 700px;
+    margin-left: 200px;
+    border: 5px dashed;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-family: cursive;
+    
+}
+
+.list {
+    justify-content: space-around;
+    width: 1000px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.list .listHeader{
+    color: #2566ae;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.split {
+    margin-top: 70px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    width: 70%;
+    background-color: transparent;
+  }
+  
+  .right {
+    right: 0;
+    width: 30%;
+    background-color: transparent
+  }
+
+  .cheque{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 30px;
+    font-family: cursive;
+    font-size: 8px;
+    flex-direction: column;
+  }
+
+  .cheque > p {
+    font-size: 15px;
+  }
+
+  .output > a > h1{
+    font-size: 15px;
+    padding-left: 30px;
+    font-family: cursive;
+    color: #2566ae;
+  }
+  #btn{
+    color: black;
+    font-family: cursive;
+    font-weight: 700;    
+    border-color: black;
+  }
+
+  .button{
+    margin-top: 30px;
+  }
+
+
+#btn:hover{
+  background-color: black;
+  color: #fff;
+}
