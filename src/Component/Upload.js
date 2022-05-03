@@ -117,7 +117,7 @@ const Upload = () => {
     <>
       <div class="split left">
         <div className="container">
-          <h1>Cheque parsing made easy, Just one click, Try now</h1>
+          <h2>Cheque parsing made easy, Just one click, Try now</h2>
         </div>
         <div className="input">
           <div {...getRootProps({ style })}>

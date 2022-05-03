@@ -2,11 +2,8 @@
 .container {
     display: flex;
     margin-left: 230px;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: Sans-serif;
 }
 
 .input{
@@ -19,10 +16,6 @@
     border: 2.8px dashed;
     border-radius: 15px;
     margin-top: 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
     background-color: #ececec;
     
 }
@@ -80,14 +73,11 @@
   }
 
   .cheque{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     margin-left: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 8px;
+    font-size: 10px;
+    font-family: Sans-serif;
     flex-direction: column;
   }
 
@@ -98,28 +88,19 @@
   .output > a > h1{
     font-size: 15px;
     padding-left: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Sans-serif;
     color: #2566ae;
   }
 
   #pTag{
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 200;
   }
   #btn{
     color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;    
+    font-weight: 200;    
     border-color: black;
   }
 
